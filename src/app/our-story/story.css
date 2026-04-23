@@ -56,8 +56,22 @@
   margin-top: 24px;
 }
 
+.story-image {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.story-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .quote-section {
   text-align: center;
+
   background: var(--color-surface);
   padding: 160px var(--spacing-margin-desktop);
 }
