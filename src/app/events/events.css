@@ -1,0 +1,99 @@
+.events-header {
+  text-align: center;
+  padding-top: 160px;
+}
+
+.events-header h1 {
+  margin-bottom: 24px;
+}
+
+.events-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.event-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 60px;
+  padding: 80px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.event-date .data-label {
+  font-size: 16px;
+  color: var(--color-secondary);
+}
+
+.event-main h2 {
+  margin-bottom: 12px;
+}
+
+.event-time {
+  display: block;
+  margin-bottom: 32px;
+  opacity: 0.6;
+}
+
+.event-main p {
+  margin-bottom: 48px;
+  max-width: 600px;
+}
+
+.event-footer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.event-footer .price {
+  font-size: 18px;
+}
+
+.private-hire-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: white;
+  border: 1px solid rgba(0,0,0,0.05);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.private-hire-card .card-content {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.private-hire-card .card-content h2 {
+  margin-bottom: 24px;
+}
+
+.private-hire-card .card-content p {
+  margin-bottom: 40px;
+}
+
+.card-image-half {
+  height: 100%;
+  position: relative;
+  min-height: 400px;
+}
+
+@media (max-width: 768px) {
+  .event-item {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 60px 0;
+  }
+  .private-hire-card {
+    grid-template-columns: 1fr;
+  }
+  .private-hire-card .card-content {
+    padding: 40px 20px;
+  }
+  .card-image-half {
+    min-height: 250px;
+  }
+}
+

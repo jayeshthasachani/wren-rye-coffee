@@ -1,0 +1,102 @@
+.story-hero {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.story-hero-image {
+  object-fit: cover;
+  filter: brightness(0.4);
+}
+
+.story-hero-overlay {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+  padding: 0 40px;
+}
+
+.story-hero-overlay .data-label {
+  margin-bottom: 24px;
+  display: block;
+  opacity: 0.8;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px;
+  align-items: center;
+}
+
+.story-grid.reverse {
+  direction: rtl;
+}
+
+.story-grid.reverse > * {
+  direction: ltr;
+}
+
+.divider-small {
+  width: 40px;
+  height: 1px;
+  background: var(--color-primary);
+  margin: 24px 0 32px;
+}
+
+.bg-white {
+  background: white;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.quote-section {
+  text-align: center;
+  background: var(--color-surface);
+  padding: 160px var(--spacing-margin-desktop);
+}
+
+.quote-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.quote-container blockquote {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  color: var(--color-primary);
+}
+
+.quote-icon {
+  width: 40px;
+  height: 40px;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 20H20V30H10V20ZM25 20H35V30H25V20Z' fill='%23173320' opacity='0.2'/%3E%3C/svg%3E");
+  margin: 0 auto 32px;
+}
+
+@media (max-width: 1024px) {
+  .story-hero {
+    height: 60vh;
+  }
+  .story-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  .quote-container blockquote {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .story-hero {
+    height: 50vh;
+  }
+}
+
